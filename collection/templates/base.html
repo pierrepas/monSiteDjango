@@ -1,0 +1,21 @@
+ {% load staticfiles %}
+<!doctype html>
+<html>
+
+<head>
+        <style>
+            p.sansserif {
+                font-family: Open Sans;
+            }
+        </style>
+        <title>Le Parti pris des choses</title>
+        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+        <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" /> {% block header %}{% endblock header %}
+</head>
+
+<body>
+    {% block content %}{% endblock content %} {% block footer %}{% endblock footer %}
+</body>
+
+</html>
