@@ -9,15 +9,21 @@
             {% endblock title %}
         </title>
 
-        <header>
-            {% block header %}{% endblock header %}
-        </header>
+        {% block header %}{% endblock header %}
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans"/>
         <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
         <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
     </head>
 
     <body>
+        <header>
+            <h1>Mon application web</h1>
+            <nav>
+                <a href="{% url 'home' %}">Accueil</a>
+                <a href="{% url 'about' %}">À propos</a>
+                <a href="{% url 'contact' %}">Contact</a>
+            </nav>
+        </header>
         {% block content %}{% endblock content %}
         {% block footer %}{% endblock footer %}
     </body>

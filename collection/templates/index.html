@@ -3,16 +3,15 @@
     Le Parti pris des choses -
     {{ block.super }}
 {% endblock title %}
-{% block header %}
-    <h1>
-        <b>
-            <i>Le Parti pris des choses</i>
-        </b><br /><br />
-        <a href="https://en.wikipedia.org/wiki/Francis_Ponge" title="Francis Ponge">Francis Ponge</a>
-    </h1>
-{% endblock header %}
 
 {% block content %}
+    <h1>
+        <b>
+            <i>Le Parti pris des choses, de
+            </i>
+        </b>
+        <a href="https://en.wikipedia.org/wiki/Francis_Ponge" title="Francis Ponge">Francis Ponge</a>
+    </h1>
     <p>
         <strong>
             <i>Le Parti pris des choses</i>
@@ -32,6 +31,21 @@
         une lampe !), loin des stéréotypes usés. Mais ce n'est pas non plus chez Ponge un désir de brider l'expression poétique : le papillon est également « un minuscule voilier des airs malmené par le vent » ou même « une allumette volante ». Aussi le
         poète use-t-il de tous les moyens à sa disposition pour briser le moule, et créer ses propres objets poétiques : poésie du cageot, paradoxale ; poésie des objets de consommation : le pain ; poésie de la nature enfin, dans ce qu'elle a de plus
         concret. Ce regard sur les objets prend leur parti, c'est-à-dire qu'il leur rend justice en ne les enfermant pas dans des stéréotypes.
+    </p>
+
+    <p>Nombre actuel de visiteurs du site:
+        {{ nbVisiteurs }}
+        {% if nbVisiteurs < 100 %}
+            Ce site n'est pas très connu.
+        {% else %}
+            {% if nbVisiteurs < 1000 %}
+                Ce site est en train de gagner en popularité!
+            {% else %}
+                {% if nbVisiteurs < 10000 %}
+                    Ce site est devenu célèbre!
+                {% endif %}
+            {% endif %}
+        {% endif %}
     </p>
 
     <center>
