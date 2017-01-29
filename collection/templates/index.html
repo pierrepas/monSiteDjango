@@ -1,17 +1,18 @@
 {% extends 'base.html' %}
 {% block title %}
-    Le Parti pris des choses -
+    Accueil -
     {{ block.super }}
 {% endblock title %}
 
 {% block content %}
-    <h1>
+<h1>Qu'est ce que <b>thingder</b>?</h1>
+    <h2>
         <b>
             <i>Le Parti pris des choses, de
             </i>
         </b>
         <a href="https://en.wikipedia.org/wiki/Francis_Ponge" title="Francis Ponge">Francis Ponge</a>
-    </h1>
+    </h2>
     <p>
         <strong>
             <i>Le Parti pris des choses</i>
@@ -34,7 +35,7 @@
     </p>
 
     <p>Nombre actuel de visiteurs du site:
-        {{ nbVisiteurs }}
+        {{ nbVisiteurs }}. <br>
         {% if nbVisiteurs < 100 %}
             Ce site n'est pas très connu.
         {% else %}

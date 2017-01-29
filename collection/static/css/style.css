@@ -1,5 +1,5 @@
 body {
-    background-image: url("../images/clouds.jpg");
+    background-image: url("../images/woodlight.jpg");
     background-color: #cccccc;
     margin: 0 auto;
     max-width: 50em;
@@ -9,6 +9,20 @@ body {
 }
 
 h1 {
+    font-family: Fira Sans;
+    font-size: 40px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 1000;
+    line-height: 60px;
+    margin-top: 1em;
+    padding-top: 1em;
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+    color: #e81c4f;
+}
+
+h2 {
     font-family: Open Sans;
     font-size: 24px;
     font-style: normal;
@@ -19,17 +33,6 @@ h1 {
     padding-top: 1em;
     margin-bottom: 1em;
     padding-bottom: 1em;
-}
-
-h2 {
-    font-family: Open Sans;
-    font-size: 20px;
-    font-style: italic;
-    font-variant: normal;
-    font-weight: 700;
-    line-height: 15.4px;
-    margin-top: 1em;
-    padding-top: 1em;
 }
 
 h3 {
@@ -44,7 +47,7 @@ h3 {
 p {
     font-family: Open Sans;
     color: #566b78;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 blockquote {
@@ -65,7 +68,7 @@ pre {
     line-height: 18.5667px;
 }
 
-h1, h2, strong {
+h2, strong {
     color: #333;
 }
 
@@ -102,20 +105,15 @@ pre {
 }
 
 header {
-    background-color: #263d36;
-    background-image: url("../images/sky.jpg");
+    /* background-color: #263d36; */
+    background-color: #550716;
+    /* background-image: url("../images/sky.jpg"); */
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
     line-height: 1.0;
     padding: 2vw 2em;
     text-align: center;
-}
-
-header h1 {
-    color: white;
-    font-size: 2.5em;
-    font-weight: 500;
 }
 
 header a {

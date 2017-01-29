@@ -5,7 +5,7 @@
     <head>
         <title>
             {% block title %}
-                Le Parti pris des choses
+                Thingder, l'application de rencontre pour objets
             {% endblock title %}
         </title>
 
@@ -17,12 +17,15 @@
 
     <body>
         <header>
-            <h1>Mon application web</h1>
+            <h1>
+                <b>thingder</b>
+            </h1>
             <nav>
                 <a href="{% url 'home' %}">Accueil</a>
                 <a href="{% url 'about' %}">À propos</a>
                 <a href="{% url 'contact' %}">Contact</a>
             </nav>
+            <br>
         </header>
         {% block content %}{% endblock content %}
         {% block footer %}{% endblock footer %}
